@@ -1,0 +1,117 @@
+/* Your existing styles here */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(49, 56, 56);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.game {
+  margin: auto;
+  background-color: rgb(49, 56, 56);
+  width: 520px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  position: relative;
+  top: 5px;
+  background-color: rgb(49, 56, 56);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150px;
+  width: 300px;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 18px;
+}
+
+.name {
+  color: rgb(221, 215, 103);
+  font-size: 23px;
+  text-shadow: 2px 2px 5px rgb(163, 28, 28);
+}
+
+.bsco {
+  margin-top: 20px;
+  display: flex;
+  gap: 70px;
+  align-items: center;
+}
+
+.bsco button {
+  padding: 5px 5px 5px 5px;
+  background-color: rgb(92, 186, 207);
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+.bsco button:active {
+  background-color: rgb(0, 191, 234);
+}
+
+.score {
+  background-color: burlywood;
+  width: 100px;
+  font-size: 25px;
+  padding: 5px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  width: 360px;
+  margin: 0px 0px 0px 0px;
+  padding-left: 12px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  border: 3px solid black;
+  box-shadow: 0 0 10px rgb(240, 240, 10);
+  border-radius: 10px;
+}
+
+.cell {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(42, 37, 51);
+  border-radius: 10px;
+  box-shadow: 0px 0px 3px rgb(10, 228, 240);
+}
+
+.cell-after {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(0, 191, 234);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+.rules {
+  visibility: hidden;
+  color: yellow;
+  margin-top: 50PX;
+  width: 360px;
+  font-size: 20px;
+}
